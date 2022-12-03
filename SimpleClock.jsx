@@ -10,7 +10,7 @@ const options = {
 	timeSize: "4rem",
 }
 
-export const refreshFrequency = 5000;
+export const refreshFrequency = 5e3; // 5 seconds
 export const command = `date +"${options.date}\n${options.time}"`
 
 export const className = `
@@ -23,8 +23,8 @@ export const className = `
 	text-shadow: 0 0 8px #10101099;
 `;
 
-const dateLabel = css(`font-size: ${options.dateSize};`);
-const timeLabel = css(`font-size: ${options.timeSize}; line-height: calc(${options.timeSize} * 1.1);`);
+const dateLabel = css(`font-size: ${options.dateSize};`)
+const timeLabel = css(`font-size: ${options.timeSize}; line-height: calc(${options.timeSize} * 1.1);`)
 
 export const render = ({ output, error }) => {
 	const [date, time] = output.split("\n")
