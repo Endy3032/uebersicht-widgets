@@ -6,8 +6,8 @@ const options = {
 	left: "8%",
 	date: "%a, %b %d",
 	time: "%H:%M",
-	dateSize: "1.8rem",
-	timeSize: "4rem",
+	dateSize: "1.25vw",
+	timeSize: "3.5vw",
 }
 
 export const refreshFrequency = 5e3; // 5 seconds
